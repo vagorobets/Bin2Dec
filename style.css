@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     background: rgb(39,168,163);
-    background: linear-gradient(180deg, rgba(39,168,163,0.8578781854538691) 38%, rgba(10,116,224,0.8662815467984069) 100%);
+    background: linear-gradient(180deg, rgba(39,168,163,0.8) 38%, rgba(10,116,224,0.86) 100%);
 }
 
 section {
@@ -16,7 +16,7 @@ h1 {
     color: rgb(255,255,255);
 }
 
-#input {
+input {
     margin: 1.5rem 0;
     height: 2.5rem;
     width: 40%;
