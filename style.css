@@ -16,8 +16,12 @@ h1 {
     color: rgb(255,255,255);
 }
 
+h2 {
+    color: rgb(255,255,255); 
+}
+
 input {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     height: 2.5rem;
     width: 40%;
     font-size: 25px;
@@ -29,12 +33,12 @@ input {
     transition: all .3s ease-in;
 }
 
-#input:focus{
+input:focus{
     box-shadow: rgb(92, 92, 92) 1px 1px 2px;
 }
 
-#result {
-    font-size: 25px;
-    color: rgb(255,255,255);
+input::placeholder{
+    color: rgba(92, 92, 92, .4);
+    font-size: 20px;
 }
 

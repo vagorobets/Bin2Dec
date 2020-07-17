@@ -8,7 +8,6 @@
 
 let dec = document.querySelector('#dec');
 let bin = document.querySelector('#bin');
-let test = document.querySelector('#test');
 
 dec.addEventListener('input', function(){
     let num = +dec.value;
@@ -24,10 +23,26 @@ dec.addEventListener('input', function(){
     bin.value = arr.reverse().join('');
 })
 
+dec.addEventListener('keyup', function(){
+    this.value = this.value.replace (/\D/, '');
+})
+
 bin.addEventListener('input', function(){
     let result = 0;
     bin.value.split('').reverse().forEach((elem, index) => 
         result +=(+elem * Math.pow(2, index))
         );
     dec.value = result;
+})
+
+bin.addEventListener('keydown', function(event){
+    if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9  ||
+        (event.keyCode == 65 && event.ctrlKey === true) ||
+        (event.keyCode >= 35 && event.keyCode <= 39)) {
+        return;
+      } else {
+        if ((event.keyCode < 48 || event.keyCode > 49) && (event.keyCode < 96 || event.keyCode > 97 )) {
+          event.preventDefault();
+        }
+    }
 })
