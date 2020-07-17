@@ -14,4 +14,4 @@ Bin2Dec позволяет пользователю вводить двоичн�
 
 [демо](https://vagorobets.github.io/Bin2Dec/)
 
-[![vagorobets|](https://imgur.com/AMAsumS)](https://vagorobets.github.io/Bin2Dec/)
+[![vagorobets|](https://i.imgur.com/AMAsumS.png)](https://vagorobets.github.io/Bin2Dec/)
