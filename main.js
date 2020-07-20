@@ -4,7 +4,7 @@ let bin = document.querySelector('#bin');
 dec.addEventListener('input', function(){
     let num = +dec.value;
     let arr = [];
-    while(num > 1){
+    while(num >= 1){
         if(Math.floor(num) % 2 == 0) arr.push(0);
         else {            
             arr.push(1);
